@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0px;
+    }
