@@ -77,7 +77,7 @@ hr{
     color: #fc6d6d;
     background-color: #fc6d6d;
     width: 15%;
-    margin-top: -12px;
+    margin-top: -28px;
 }
 
 .social-media-icons{
@@ -99,7 +99,7 @@ hr{
 }
 
 .navigate-list{
-    gap: 10px;
+    gap: 8px;
     justify-content: center;
     display: flex;
     font-size: 11px;
@@ -184,4 +184,65 @@ hr{
 .target{
     margin-top: 100px;
 }
+
+ul {
+    padding: 0;
+    display: flex;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  ul li {
+    list-style: none;
+    margin: 0 11px;
+  }
+  
+  ul li a {
+    position: relative; 
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 48px;
+    background: white;
+    border-radius: 50%;
+    font-size: 11px;
+    color: #666;
+    transition: .5s;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    
+    height: 100%;
+    border-radius: 50%;
+    background:  white;
+    box-shadow: 0 0 15px  #dfdcdc;
+  }
+  
+  ul li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background:  #fc6d6d;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+  
+  ul li a:hover::before {
+    transform: scale(1.0);
+    box-shadow: 0 0 15px  #fc6d6d;
+  }
+  
+  ul li a:hover {
+    color: black;
+    box-shadow: 0 0 1px #fc6d6d;
+    /* text-shadow: 0 0 5px #fc6d6d; */
+  }
 

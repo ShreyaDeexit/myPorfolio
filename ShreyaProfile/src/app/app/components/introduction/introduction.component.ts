@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 // @ts-ignore
 import Typewriter from 't-writer.js';
+// @ts-ignore
+import AOS from 'aos';
 
 @Component({
   selector: 'app-introduction',
@@ -12,6 +14,7 @@ export class IntroductionComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
     const target = document.querySelector('.tw')
 
     const writer = new Typewriter(target, {
@@ -23,11 +26,11 @@ export class IntroductionComponent implements OnInit {
 
     writer
     .changeCursorColor('white')
-  .type(' Software Engineer')
+  .type(' Software Developer')
   .rest(2500)
   .changeCursorColor('white')
   .changeOps({ deleteSpeed: 127 })
-  .remove(17)
+  .remove(18)
   .type(' Urbanite')
   .rest(3000)
   .changeCursorColor('white')
