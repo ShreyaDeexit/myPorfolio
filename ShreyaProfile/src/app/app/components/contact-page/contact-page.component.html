@@ -1,0 +1,65 @@
+
+<div class="get-in-touch"> 
+    <div data-aos="zoom-in"  data-aos-duration="900" class="get-in-touch-right">
+        <div class="image-contact">
+            <img src="assets/get_in_touch.png" alt="profile-photo" height="500" width="500" id="picture-contact">
+        </div>
+          </div>
+    <div class="get-in-touch-left">
+        
+        <div class="container">
+
+            <h2>GET IN TOUCH</h2>
+        
+            <form>
+        
+                <div class="form-group">
+        
+                    <label for="firstname">First Name</label><br>
+        
+                    <input type="text" id="Fname" name="firstname" class = "form-control" ngModel #Fname>
+                        
+                </div>
+        
+                <pre></pre>
+        
+                <div class="form-group">
+        
+                    <label for="lastname">Last Name</label><br>
+        
+                    <input type="text" name="lastname" class = "form-control" ngModel #Lname>
+        
+                </div>
+        
+                <pre></pre>
+        
+                <div class="form-group">
+        
+                    <label for="email">Email ID</label><br>
+        
+                    <input type="text" id="Email" name="email" class = "form-control" ngModel #Email>
+        
+                </div>
+        
+                <pre></pre>
+        
+                <div class="form-group">
+        
+                    <label for="message">Message</label><br>
+        
+                    <textarea ng-model="myTextarea" style="height: 90px;" #Message></textarea>
+        
+                </div>
+        
+                <pre></pre>
+        
+                
+                    <button type="button" (click)="sendEmail(Fname.value, Lname.value, Email.value, Message.value)">send</button>
+                  
+        
+            </form>
+        
+        </div>
+        
+    </div>
+</div>
